@@ -1,4 +1,5 @@
 import React from 'react'
+import HomeImage from '@/public/home-img.png'
 
 const Home = () => {
   return (
@@ -19,13 +20,13 @@ const Home = () => {
           <div className="flex gap-4">
             <button
               href="/3d-models"
-              className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white"
+              className="px-6 py-3 text-black transition duration-100 bg-white border-2 border-black hover:bg-black hover:text-white cursor-pointer"
             >
               Browse Models
             </button>
           </div>
         </div>
-        <img src="/home-img.png" width={350} />
+        <img src={HomeImage.src} width={350} />
       </section>
     </main>
   )
